@@ -94,6 +94,10 @@ section h2 {
   margin: auto;
 }
 
+.logo-container {
+  width: 70%;
+}
+
 @media (max-width: 991px) {
   .hc {
     -ms-flex-line-pack: right;
