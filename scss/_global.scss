@@ -28,7 +28,7 @@ section {
 }
 
 // Li Object Margin
-li {
+.list {
   margin-bottom: 1.7rem;
 }
 
@@ -41,11 +41,20 @@ li {
 // Custom Rounded Image
 .img-round {
   border-radius: 50%;
+  margin: auto;
 }
 
 .img-container {
   margin: auto;
   width: 256px;
+}
+
+.img-about {
+  width: 256px;
+}
+
+.img-mobile {
+  margin: auto;
 }
 
 // Custom Rounded Social Button
@@ -77,16 +86,37 @@ li {
 
 .menu:hover .menu:focus .menu:active {
   color: $primary;
-
 }
 
 // Custom Logo options
 .logo-hc {
   margin: auto;
-  margin-bottom: 2.5rem;
 }
 
-@media(min-width:992px) {
+@media(max-width: 991px) {
+  .hc {
+    align-content: right;
+  }
+
+  .img-mobile {
+    width: 256px;
+    margin-bottom: 2.3rem;
+  }
+
+  .logo-hc {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .hc {
+    justify-content: center;
+  }
+
+  .img-container {
+    width: 512px;
+  }
+
   .logo-hc {
     margin-top: 0.8rem;
   }

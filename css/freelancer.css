@@ -34,7 +34,7 @@ section h2 {
   }
 }
 
-li {
+.list {
   margin-bottom: 1.7rem;
 }
 
@@ -45,11 +45,20 @@ li {
 
 .img-round {
   border-radius: 50%;
+  margin: auto;
 }
 
 .img-container {
   margin: auto;
   width: 256px;
+}
+
+.img-about {
+  width: 256px;
+}
+
+.img-mobile {
+  margin: auto;
 }
 
 .btn-social {
@@ -83,10 +92,31 @@ li {
 
 .logo-hc {
   margin: auto;
-  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 991px) {
+  .hc {
+    -ms-flex-line-pack: right;
+    align-content: right;
+  }
+  .img-mobile {
+    width: 256px;
+    margin-bottom: 2.3rem;
+  }
+  .logo-hc {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media (min-width: 992px) {
+  .hc {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .img-container {
+    width: 512px;
+  }
   .logo-hc {
     margin-top: 0.8rem;
   }
